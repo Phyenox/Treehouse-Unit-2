@@ -1,7 +1,4 @@
 
-/* Web fonts Section */
-
-
 
 * {
   box-sizing: border-box;
@@ -10,11 +7,11 @@
 
 }
 
-/* Main Section*/
+/*  Main Section */
 
 body {
   background: #d9e5f0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Comic Neue', cursive;
   font-size: medium;
 }
 
@@ -26,6 +23,12 @@ p {
   margin-left: 15px;
   margin-right: 15px;    
 }
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}  
 
 h2,
 h3 {
@@ -59,8 +62,7 @@ p {
   text-align: center; 
 }
 
-
-/* Navigation Section */
+/*  Navigation Section */
 
 
 .main-nav a {
@@ -112,18 +114,25 @@ aside {
   border-top: 1px solid rgb(189, 192, 195);   
 }
 
-.float-left {
+.samantha {
   float: left;
 }
 
-.float-right {
+.back-to-top {
   float: right; 
 }
 
-.float-right a {
+.back-to-top a {
     text-decoration: none;
     text-transform: uppercase; 
     color: #000; 
+}
+
+/*  Links Section */
+
+.back-to-top a:hover,
+.nav li a:hover {
+  color: #D77017;
 }
 
 
