@@ -65,6 +65,7 @@ p {
 
 /*  Navigation Section */
 
+
 .main-nav a {
   text-transform: uppercase;
   text-decoration: none;
@@ -124,6 +125,7 @@ aside {
 
 .top {
   float: right; 
+  padding-right: 10px;
 }
 
 .top a {
@@ -134,7 +136,8 @@ aside {
 
 
 .top a:hover,
-.nav li a:hover {
+.nav li a:hover,
+.email a:hover {
   color: #D77017;
 }
 
@@ -157,12 +160,18 @@ li {
   display: none;
 }
 
-a {
+.nav li a,
+.footer-nav li a {
   text-decoration: none; 
   text-transform: uppercase;
   line-height: 1.38em;
+  color: #000;
 }
 
+.email a {
+  text-decoration: none;
+  color: #000;
+}
 
 
 /* Media Queries below */
@@ -180,7 +189,7 @@ a {
   }
   
   .name {
-    padding: 1.5em 0 .6em;
+    padding: 1em 0 .6em;
     margin: 0;
   }
 
@@ -224,6 +233,10 @@ a {
     margin: 0 5px 0;
   }
 
+  .skills-header {
+    padding-top: 0;
+  }
+
   .gallery,
   .calculator {
     margin-bottom: 25px;
@@ -256,15 +269,27 @@ a {
 
 @media (min-width: 1024px) {
 
-  body {
+  html {
+    margin: 0 auto;
     max-width: 1100px;
-    text-align: center;
   }
 
-  .name,
-  .nav,
+  body {
+    background: rgb(228, 228, 248); 
+  }
+
+  .main-nav {
+    padding-bottom: 15px;
+  }
+
   .nav li {
-     display: inline-block; 
+    float: right;
+    margin-top: 30px;
+  }
+
+  .name {
+    float: left;
+    margin-left: 10px;
   }
   
   .marketing,
@@ -285,7 +310,7 @@ a {
   }
 
   .skill {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .skills-img {
@@ -293,6 +318,10 @@ a {
     max-height: 270px;
   }
 
+  .container,
+  footer {
+    background: #D2E8FA; 
+  }
 
 }
 
@@ -303,6 +332,5 @@ a {
   clear: both;
   display: table;    
 }
-
 
 
