@@ -180,6 +180,15 @@ li {
 
 @media (min-width: 768px) {
   
+  .marketing,
+  .travel,
+  .gallery,
+  .search,
+  .map,
+  .calculator {
+    min-height: 400px;
+  }
+
   .nav li {
     display: inline-block;   
   }
@@ -265,7 +274,7 @@ li {
   .full a:hover {
     color: #D77017;
   }
-
+}
 /* Media Query for Min-width 1024px */
 
 @media (min-width: 1024px) {
