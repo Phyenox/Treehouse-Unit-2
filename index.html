@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
   <title>Responsive Profile</title>
 </head>
 
 <body>
   <header>
-    <nav class="main-nav" class="clearfix">
+    <nav class="main-nav clearfix">
       <h1 class="name">Samantha Millar</h1>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
@@ -22,15 +24,23 @@
     </nav>
   </header>
 
-  <section class="container" id="profile">
-    <img src="images/responsive-layout-profile.png" alt="Profile image placeholder" class="main-img">
-    <p class="profile-text">Hi! I'm a front-end developer who love design and CSS. I recently finsihed learning front-end web development at Treehouse and am excited to put my skills to use!</p>
-  </section>
+  <article>
+    <div class="container clearfix" id="profile">
+      <img src="images/responsive-layout-profile.png" alt="Profile image placeholder" class="main-img">
+      <p class="profile-text">Hi! I'm a front-end developer who loves design and CSS. I recently finsihed learning front-end web development at Treehouse and am excited to put my skills to use!</p>
+    </div>
+
+    <div class="container skill" id="skills">
+        <img src="images/skills.jpg" alt="Skills image placeholder" class="skills-img">
+        <h2>Skills</h2>
+        <p>My skills I've pick up over the coruse of my life are greaty varied. Woking in hospotality with early starts and very busy, hectic days has given me a great deal of respect towards my peers. Its taught me alot about patience and hard work along with the importance of having so down time to relax. I'm here to start a career change as hospotality can be very draining with all they physical labour and my love for computers has lead me here. Only been working with web development for a few weeks now with no prior knowledge i plan on learning everything I can and working hard to achieve my goals.</p>
+    </div>
+</article>
 
   <main>
-    <section class="wrapper">
-      <div>
-        <h2 class="portfolio portfolio-header">Portfolio</h2>
+
+    <section class="wrapper clearfix">
+        <h2 class="portfolio">Portfolio</h2>
 
       <div class="marketing">
         <img src="images/portfolio-1.png" alt="Marketing image placeholder">
@@ -68,29 +78,28 @@
         <p>Someone can enter in the numbers they want, and press the big blue button and get a result.</p>
       </div>
 
-      <div class="skills" id="skills">
-        <img src="images/skills.jpg" alt="Skills image placeholder">
-        <h2>Skills</h2>
-        <p>This is how I've chosen to display all the skills I've learn't in one place.</p>
-      </div>
-
     </section>
 
   </main>
 
 <footer>
-  <section id="contacts" class="contact">
+  <section id="contacts" class="contact clearfix">
     <h3 class="contact-header">Contact</h3>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     <div>
       <p class="phone">Phone <strong>+1(111)555-1234</strong></p>
-      <p class="email">Email <strong>email@yoursite.com</strong></a></p>
+      <p class="email">Email <strong>email@yoursite.com</strong></p>
     </div>
   </section>
   
   <aside>
     <p class="samantha"><strong>Samantha Millar</strong></p>
-    <p class="back-to-top"><a href="#top"><strong>Back to top</strong></a></p>
+      <ul class="footer-nav">
+        <li class="top"><a href="#top"><strong>Back to top</strong></a></li>
+        <li class="full"><a href="#top"><strong>Home</strong></a></li>
+        <li class="full"><a href="#portfolio"><strong>Portfolio</strong></a></li>
+        <li class="full"><a href="#contacts"><strong>Contact</strong></a></li>
+      </ul>
   </aside>
 </footer>
 </body>

@@ -9,10 +9,15 @@
 
 /*  Main Section */
 
+html,
 body {
-  background: #d9e5f0;
-  font-family: 'Comic Neue', cursive;
+  height: 100%;
+}
+
+body {
+  font-family: 'Gotu', sans-serif;
   font-size: medium;
+  background: #D2E8FA; 
 }
 
 h1,
@@ -35,11 +40,6 @@ h3 {
   padding: 20px 0 10px;  
 }
 
-
-.portfolio-header {
-    text-transform: uppercase;
-  }
-
 p {
   padding-bottom: 20px;    
 }
@@ -51,11 +51,12 @@ p {
   
 .container {
   padding-top: 20px;
-  padding-bottom:30px;    
+  padding-bottom:30px;   
 }
 
 .portfolio {
-   margin-bottom: 1em;   
+   margin-bottom: 1em;
+   text-transform: uppercase;   
 }
 
 .profile-text {
@@ -63,7 +64,6 @@ p {
 }
 
 /*  Navigation Section */
-
 
 .main-nav a {
   text-transform: uppercase;
@@ -92,10 +92,12 @@ img {
 
 }
 
-.main-img {
+.main-img,
+.skills-img {
   width: 70%;
   padding: 10px 0 30px;    
 }
+
 
 /* Footer section */
 
@@ -111,46 +113,190 @@ img {
 aside {
   padding: 25px 0 25px;
   margin-bottom: 1em; 
-  border-top: 1px solid rgb(189, 192, 195);   
+  border-top: 1px solid rgb(122, 122, 122);   
 }
 
 .samantha {
   float: left;
+  height: 12px;
+  line-height: 12px;
 }
 
-.back-to-top {
+.top {
   float: right; 
 }
 
-.back-to-top a {
+.top a {
     text-decoration: none;
     text-transform: uppercase; 
     color: #000; 
 }
 
-/*  Links Section */
 
-.back-to-top a:hover,
+.top a:hover,
 .nav li a:hover {
   color: #D77017;
 }
 
-
-/* Media Queries below */
-
-@media (min-width: 768px) {
-
-
-
+.footer-nav {
+  text-align: right;
+  list-style: none;
+  padding-left: 0;
 }
 
+li {
+  display: inline-block;
+}
+
+.top,
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+
+.full {
+  display: none;
+}
+
+a {
+  text-decoration: none; 
+  text-transform: uppercase;
+  line-height: 1.38em;
+}
+
+
+
+/* Media Queries below */
+/* Media Query for Min-width 768px */
+
+@media (min-width: 768px) {
+  
+  .nav li {
+    display: inline-block;   
+  }
+
+  header {
+    text-align: center;
+    background: aliceblue;
+  }
+  
+  .name {
+    padding: 1.5em 0 .6em;
+    margin: 0;
+  }
+
+  .main-img {
+    float: right;
+    width: 37%;
+    margin: 0 1em 0;
+    
+  }
+
+  .skills-img {
+    float: left;
+    max-width: 370px;
+    max-height: 270px;
+    width:37%;
+    margin: 0 1em 0;
+  }
+
+  .profile-text {
+    margin-top: 1.5em;
+    font-size: x-large;
+    text-align: left;
+  }
+
+  .marketing,
+  .travel,
+  .gallery {
+    float: left;
+    width: 50%;
+  }
+
+  .search,
+  .map,
+  .calculator {
+    float: right;
+    width: 50%;
+  }
+
+  .skills {
+    padding: 0 15px 0;
+    margin: 0 5px 0;
+  }
+
+  .gallery,
+  .calculator {
+    margin-bottom: 25px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .top {
+     display: none;
+  }
+
+  .full {
+    display: inline-block;
+    padding-right: 20px;
+  }
+
+  .full a {
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #000; 
+}
+
+  .full a:hover {
+    color: #D77017;
+  }
+
+/* Media Query for Min-width 1024px */
 
 @media (min-width: 1024px) {
 
+  body {
+    max-width: 1100px;
+    text-align: center;
+  }
+
+  .name,
+  .nav,
+  .nav li {
+     display: inline-block; 
+  }
+  
+  .marketing,
+  .map {
+    float: left;
+    width: 33.33%;
+  }
+
+  .travel,
+  .calculator {
+    float: right;
+    width: 33.33%
+  }
+
+  .search,
+  .gallery {
+    width: 33.33%
+  }
+
+  .skill {
+    padding-bottom: 40px;
+  }
+
+  .skills-img {
+    max-width: 380px;
+    max-height: 270px;
+  }
+
 
 }
 
-
+/* Clearfix Below */
 
 .clearfix::after {
   content: "";
