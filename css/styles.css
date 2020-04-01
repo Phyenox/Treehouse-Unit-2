@@ -283,8 +283,12 @@ li {
     padding-bottom: 15px;
   }
 
-  .nav li {
+  .nav {
     float: right;
+  }
+
+  .nav li {
+    float: left;
     margin-top: 30px;
   }
 
@@ -326,12 +330,10 @@ li {
 
 }
 
-/* Clearfix Below */
+/* Clearfix */
 
 .clearfix::after {
   content: "";
   clear: both;
-  display: table;    
+  display: table;
 }
-
-
